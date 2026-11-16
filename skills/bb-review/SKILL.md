@@ -6,11 +6,11 @@ description: >-
   draft against the live CAD model and the stated requirements, in five
   stages: comprehension, DFM/manufacturing, cost, sustainability, and
   PLM consistency plus implementation readiness. Every finding must name
-  a feature, dimension, tolerance, material, or dataset — never generic
+  a feature, dimension, tolerance, material, or dataset, never generic
   advice. Use to review a design draft before building it.
 ---
 
-# Review — CAD Goldfish Review Protocol
+# Review, CAD Goldfish Review Protocol
 
 Reviews a CAD design specification through specialised reviewer personas.
 Each reviewer runs in a fresh context with no conversation history. That
@@ -49,7 +49,7 @@ the drafting context and call it a review.
 6. **Concrete findings only (MANDATORY):** every finding MUST name a
    feature, dimension, tolerance, material, process parameter, cost
    figure, or dataset/revision. A finding without a named target is not
-   a finding — drop it and say it was dropped. "Consider
+   a finding, drop it and say it was dropped. "Consider
    manufacturability", "review tolerances", and "check sustainability"
    are not findings.
 7. **Verify against the model:** where the draft cites a CAD file, the
@@ -88,27 +88,27 @@ Run stages in order. In `interactive` mode, pause after each stage and
 ask the engineer one question: continue, stop, or change scope. In
 `consolidated` mode, run all five and write one report.
 
-**Stage 1 — Comprehension.** Persona: `agents/bb-comprehension-reviewer.md`.
+**Stage 1, Comprehension.** Persona: `agents/bb-comprehension-reviewer.md`.
 Can a competent engineer who never saw this project build the part from
 this document alone? Findings: undefined terms, missing dimensions,
 tolerances without datums, requirements without acceptance criteria,
-sections that contradict each other. The reviewer reads ONLY the spec —
+sections that contradict each other. The reviewer reads ONLY the spec,
 no CAD file, no conversation.
 
-**Stage 2 — DFM / manufacturing.** Persona: `agents/bb-dfm-reviewer.md`.
+**Stage 2, DFM / manufacturing.** Persona: `agents/bb-dfm-reviewer.md`.
 Check every feature against the stated process and its limits: minimum
 wall, draft, radii, hole sizes and clearances, tolerances the process
 can hold, fastener and insert sizes. Check every cited model number
 against the CAD file. Findings name the feature and the number that
 fails, and the process limit it fails against.
 
-**Stage 3 — Cost.** Persona: `agents/bb-cost-reviewer.md`. Check that
+**Stage 3, Cost.** Persona: `agents/bb-cost-reviewer.md`. Check that
 the cost story is internally consistent: process and material in the
 cost section must match the material and process section. Check that
 the named cost drivers are the ones that actually move cost for this
 part at this quantity. Findings name the figure and the contradiction.
 
-**Stage 4 — Sustainability.** Persona:
+**Stage 4, Sustainability.** Persona:
 `agents/bb-sustainability-reviewer.md`. Check the material and
 end-of-life claims: recycled-content data present or missing, material
 health data, disassembly possible or blocked (bonding, overmoulding,
@@ -116,7 +116,7 @@ mixed materials), and whether the stated sustainability targets are
 measurable. Missing data is a finding, not a pass. Findings name the
 material, the target, and the missing evidence.
 
-**Stage 5 — PLM consistency and implementation readiness.** Persona:
+**Stage 5, PLM consistency and implementation readiness.** Persona:
 `agents/bb-plm-reviewer.md`. Check every dataset name, revision, and
 source-file reference: does the dataset exist, is the revision current,
 does the cited STEP format version match the file, does the part count
@@ -127,7 +127,7 @@ closing evidence named? Findings name the dataset, revision, or file.
 ### Step 3: Synthesise
 
 Persona: `agents/bb-synthesizer.md`. The synthesizer receives the five
-stage reports (and nothing else — no drafting conversation) and merges
+stage reports (and nothing else, no drafting conversation) and merges
 them into `review_report.md`:
 
 - **Findings, ranked:** each finding has a severity (blocker / major /
@@ -138,9 +138,9 @@ them into `review_report.md`:
   or wrong, listed with one line each saying why they were dropped.
 - **Controls passed:** spec claims the reviewers checked against the
   model and found correct (bounding box, part count, format version).
-  A review with no passed controls did not check the model — say so.
+  A review with no passed controls did not check the model, say so.
 - **Verdict:** `NOT READY` (has blockers), `READY WITH CHANGES`
   (majors only), or `READY` (minors only).
 
 Tell the user the file path. Suggest `bb-resolve` next. Do not fix the
-spec yourself — the engineer decides which findings to address.
+spec yourself, the engineer decides which findings to address.
