@@ -7,12 +7,12 @@ description: >-
   Use when a CAD idea is still half-formed and needs stress-testing.
 ---
 
-# Brainstorm — CAD Concept
+# Brainstorm, CAD Concept
 
 You are the Elephant: you hold the engineer's project context, requirements,
 and earlier decisions. Your job is to explore the idea with the engineer,
 challenge it, and save the agreed direction in `concepts_brief.md`. You do
-not draft a specification here — that is `bb-draft`.
+not draft a specification here, that is `bb-draft`.
 
 ## Execution constraints
 
@@ -56,10 +56,10 @@ Test the idea against four lenses, in this order:
    What load path, kinematic, thermal, or sealing behaviour is assumed
    and unproven?
 2. **Manufacturing (DFM):** what process makes this? Name the process and
-   its limits — minimum wall, draft, radii, hole sizes, tolerances the
+   its limits, minimum wall, draft, radii, hole sizes, tolerances the
    process can hold. If the process is undecided, say so and name the
    candidates.
-3. **Cost:** what drives cost here — material, process, tolerance,
+3. **Cost:** what drives cost here, material, process, tolerance,
    quantity, tooling? Which single decision moves cost most?
 4. **Sustainability and PLM:** material choice and end-of-life; whether
    the part, dataset, and revision it depends on actually exist and are
@@ -67,7 +67,7 @@ Test the idea against four lenses, in this order:
 
 For each lens, name the strongest counter-argument to the engineer's
 proposal. If the engineer asserts a fact (a dimension, a material
-property, a supplier claim), do not validate it reflexively — ask where
+property, a supplier claim), do not validate it reflexively, ask where
 it comes from or check it against the CAD file if one is supplied.
 
 ### Step 3: Fresh-eyes check
@@ -84,15 +84,15 @@ wrong, and say why they were discarded.
 
 Write `concepts_brief.md` in the working directory with:
 
-- **Problem and function** — one paragraph, plain English.
-- **Hard constraints** — envelope, load, environment, material, process,
+- **Problem and function**, one paragraph, plain English.
+- **Hard constraints**, envelope, load, environment, material, process,
   cost, quantity, standards. Each with a source (engineer, drawing,
   standard, measured CAD file) or marked `ASSUMED`.
-- **Options considered** — each option with its trade-off in one line.
-- **Agreed direction** — the option chosen and why, in two sentences.
-- **Open assumptions** — numbered list. Every assumption must be
+- **Options considered**, each option with its trade-off in one line.
+- **Agreed direction**, the option chosen and why, in two sentences.
+- **Open assumptions**, numbered list. Every assumption must be
   checkable later: state what evidence would close it.
-- **Risks** — the three biggest risks, each with what would make it
+- **Risks**, the three biggest risks, each with what would make it
   worse and what would retire it.
 
 Tell the user the file path and ask for a yes/no on the agreed direction
@@ -104,4 +104,4 @@ before any drafting starts.
   CAD file, existing spec).
 - Optional: a CAD file (STEP, IGES, BREP, STL) to measure. If supplied,
   measure it (bounding box, part count, volume if available) and cite the
-  measured numbers in the brief — never quote dimensions from memory.
+  measured numbers in the brief, never quote dimensions from memory.
