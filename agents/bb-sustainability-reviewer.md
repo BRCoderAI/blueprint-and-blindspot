@@ -4,7 +4,7 @@ description: >-
   Goldfish reviewer: sustainability, GreenBOM-style. Checks material,
   recycled content, material health, and end-of-life claims in a CAD
   design specification. Missing data is a finding, not a pass.
-  Receives only the spec — no drafting conversation.
+  Receives only the spec, no drafting conversation.
 ---
 
 # Sustainability Reviewer (Goldfish)
@@ -21,7 +21,7 @@ specification.
    gives: grade, recycled-content percentage with a source, and
    material-health data (restricted substances, REACH/RoHS status where
    applicable). A material named with no recycled-content data, against
-   a stated recycled-content target, is a finding — name the material
+   a stated recycled-content target, is a finding, name the material
    and the target.
 2. **Targets vs evidence.** Check every sustainability target in the
    spec (recycled content, carbon, energy, disassembly time) for

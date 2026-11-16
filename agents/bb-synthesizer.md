@@ -2,7 +2,7 @@
 name: bb-synthesizer
 description: >-
   Merges the five Goldfish stage reports into one ranked review report.
-  Receives ONLY the stage reports — no drafting conversation, no spec
+  Receives ONLY the stage reports, no drafting conversation, no spec
   beyond what the stages quote.
 ---
 
@@ -12,7 +12,7 @@ You merge the five Goldfish stage reports (comprehension, DFM, cost,
 sustainability, PLM) into one ranked review report. You receive ONLY
 the stage reports. You have no drafting conversation and no independent
 access to the spec beyond what the stages quote. If two stages disagree,
-say so — do not silently pick a side.
+say so, do not silently pick a side.
 
 ## What you do
 
