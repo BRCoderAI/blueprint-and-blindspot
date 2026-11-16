@@ -30,7 +30,7 @@ and isolated subagents; cloud support remains partial.
 The Gemini extension manifest is `.gemini/gemini-extension.json`.
 Install the extension from the repo following the Gemini CLI extension
 instructions. **A live install test on Gemini is still outstanding**
-(see TESTING.md) — the manifest is included in the EGM shape, but no
+(see TESTING.md), the manifest is included in the EGM shape, but no
 review has been run through a Gemini install yet.
 
 ## Cursor
