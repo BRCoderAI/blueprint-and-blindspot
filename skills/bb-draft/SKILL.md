@@ -7,7 +7,7 @@ description: >-
   Use after bb-brainstorm, or from existing notes.
 ---
 
-# Draft — CAD Design Specification
+# Draft, CAD Design Specification
 
 You are the Elephant: you hold the concept brief, the requirements, and
 the earlier decisions. Your job is to turn the brief into a design
@@ -28,7 +28,7 @@ reference has a source, or is marked `ASSUMED` with what would close it.
    document in one pass.
 4. **Every number sourced:** every dimension, tolerance, material,
    process parameter, cost figure, and dataset reference carries its
-   source in brackets — `[engineer]`, `[drawing]`, `[standard: name]`,
+   source in brackets": `[engineer]`, `[drawing]`, `[standard: name]`,
    `[measured: filename]`, or `[ASSUMED: what would close it]`.
    A number without a source is a defect in the draft.
 5. **No glazing, no apologies:** do not praise the brief; do not
@@ -41,7 +41,7 @@ reference has a source, or is marked `ASSUMED` with what would close it.
 - **`BriefFile`**: path to `concepts_brief.md` (from `bb-brainstorm`) or
   existing notes. If missing, ask for it and end the turn.
 - Optional: CAD files to measure. Measure them and cite measured numbers
-  — never quote dimensions from memory.
+ , never quote dimensions from memory.
 
 ## Workflow
 
@@ -55,28 +55,28 @@ drafting. If the brief has no open-assumptions list, add one now.
 
 Draft in this order, pausing after each section for feedback:
 
-1. **Function and requirements** — what the part must do, in plain
+1. **Function and requirements**, what the part must do, in plain
    English, with measurable acceptance criteria.
-2. **Envelope and interfaces** — bounding box, mating faces, fastener
+2. **Envelope and interfaces**, bounding box, mating faces, fastener
    positions, clearances. Every dimension sourced or ASSUMED.
-3. **Material and process** — material grade, process, and the process
+3. **Material and process**, material grade, process, and the process
    limits the design must respect (minimum wall, draft, radii, hole
    sizes, tolerances).
-4. **Features and dimensions** — each feature named, dimensioned, and
+4. **Features and dimensions**, each feature named, dimensioned, and
    toleranced. State which dimensions are driving (functional) and which
    are free.
-5. **Sustainability** — recycled content target, material health,
+5. **Sustainability**, recycled content target, material health,
    end-of-life and disassembly. Missing data is recorded as missing,
    not filled in with a guess.
-6. **PLM and change control** — CAD system, dataset name and revision,
+6. **PLM and change control**, CAD system, dataset name and revision,
    source STEP/IGES file and its format version, change-control status.
    Every reference must name a real dataset or file, or be marked
    `TO BE CREATED`.
-7. **Cost** — cost target and the cost drivers, with the process and
+7. **Cost**, cost target and the cost drivers, with the process and
    material consistent with section 3. A cost figure that contradicts
-   the stated process or material is a defect — flag it to the engineer
+   the stated process or material is a defect, flag it to the engineer
    now, do not write it in.
-8. **Verification plan** — how each requirement will be checked
+8. **Verification plan**, how each requirement will be checked
    (measurement, simulation, prototype, inspection), and what evidence
    closes each open assumption.
 
@@ -89,5 +89,5 @@ Write the full draft to `design_draft.md` in the working directory. End
 with an **Open assumptions** section (numbered, each with the evidence
 that would close it) and a **Known gaps** section (what this draft does
 not cover). Tell the user the file path and suggest running `bb-review`
-next. Do not run the review yourself in the same context — a review in
+next. Do not run the review yourself in the same context, a review in
 the drafting context is not a Goldfish review.
