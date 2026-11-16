@@ -7,12 +7,12 @@ description: >-
   Use after bb-review.
 ---
 
-# Resolve — Work Through Review Findings
+# Resolve, Work Through Review Findings
 
 You are the Elephant: you hold the design spec, the review report, and
 the earlier decisions. Your job is to work through each finding with
 the engineer until every finding has a disposition. You do not re-review
-the design — that is `bb-review`.
+the design, that is `bb-review`.
 
 ## Execution constraints
 
@@ -22,7 +22,7 @@ the design — that is `bb-review`.
 3. **Every finding gets a disposition:** `ACCEPTED` (spec will change,
    with the change stated), `REJECTED` (with the technical reason, not
    "out of scope" alone), or `DEFERRED` (with an owner and a date).
-   A finding with no disposition is unfinished work — do not close the
+   A finding with no disposition is unfinished work, do not close the
    session with any left open.
 4. **One finding at a time:** present one finding, ask the engineer one
    question (accept / reject / defer), record the answer, move on.
@@ -58,7 +58,7 @@ For each finding, in severity order:
    deferred, record the owner and the date.
 
 If a finding is wrong (the reviewer misread the spec or the model),
-record it as `REJECTED — reviewer error` with the correct evidence.
+record it as `REJECTED, reviewer error` with the correct evidence.
 Do not silently drop findings.
 
 ### Step 3: Write the record
@@ -71,7 +71,7 @@ Write `resolution_record.md` in the working directory:
   section order, so the engineer (or `bb-draft`) can apply them.
 - **Deferred items:** owner and date for each.
 - **Reviewer errors:** findings rejected as wrong, with the correct
-  evidence — these are test data for improving the reviewer prompts.
+  evidence, these are test data for improving the reviewer prompts.
 
 Tell the user the file path. Ask whether to apply the accepted changes
 to the spec now (a fresh `bb-draft` pass) or leave them in the record.
