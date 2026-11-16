@@ -11,7 +11,7 @@ assumptions and blind spots. **You** make the engineering trade-offs
 and approve the specification before anything is built.
 
 No training, no model weights, no server, no API keys, no file uploads.
-The plugin is prompts and manifests only — skills your coding agent
+The plugin is prompts and manifests only, skills your coding agent
 runs, in the tools you already use.
 
 > Repo: `BRCoderAI/blueprint-and-blindspot`. License is Apache 2.0.
@@ -21,7 +21,7 @@ runs, in the tools you already use.
 A CAD design decision made in conversation with an AI assistant is
 never challenged by that same assistant: it remembers everything you
 said, agrees with the direction, and fills gaps from memory. The
-result is a specification that looks complete and is not — a wall
+result is a specification that looks complete and is not, a wall
 thickness below the process minimum, a clearance hole that does not
 clear, a cost figure computed for a different process, a dataset
 revision that does not exist.
@@ -39,7 +39,7 @@ the spec does not justify a decision on its own, that is a finding.
 | **You** | The goals and constraints that matter | Resolve trade-offs, approve the design, and decide what to build. |
 
 Goldfish reviews require fresh subagent contexts. If your agent cannot
-create them, the plugin stops the review — a review in the drafting
+create them, the plugin stops the review, a review in the drafting
 context is not a Goldfish review. A review does not replace
 measurement, simulation, or human judgment.
 
@@ -66,12 +66,12 @@ codex plugin add blueprint-blindspot@blueprint-blindspot
 
 Install the extension from the repo (see `docs/install.md`). The
 Gemini extension manifest is included; a live install test on Gemini
-is still outstanding — see TESTING.md.
+is still outstanding, see TESTING.md.
 
 ### Cursor
 
 See `docs/install.md`. The Cursor manifest is included; a live install
-test on Cursor is still outstanding — see TESTING.md.
+test on Cursor is still outstanding, see TESTING.md.
 
 ## Try a 60-second review on an existing spec
 
@@ -92,7 +92,7 @@ revision, and source-file reference.
 ## Try your first design
 
 Open your project in your coding agent and pick a part that needs
-design decisions — a bracket, a housing, an enclosure.
+design decisions, a bracket, a housing, an enclosure.
 
 ```
 /bb-brainstorm Add a mounting bracket for this servo.
