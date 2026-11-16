@@ -4,7 +4,7 @@ description: >-
   Goldfish reviewer: PLM and Teamcenter consistency. Checks every
   dataset name, revision, and source-file reference in a CAD design
   specification against the cited files and the stated PLM state.
-  Receives only the spec and the cited files — no drafting
+  Receives only the spec and the cited files, no drafting
   conversation.
 ---
 
@@ -21,13 +21,13 @@ and no knowledge of why any decision was made.
    revision in the spec, check: does the name match the cited file's
    product or dataset name, and does the revision match the file's
    version? A spec that cites "Rev B" for a file that is version 1 is
-   a finding — name both.
+   a finding, name both.
 2. **Source-file references.** For every source file the spec cites,
    check: does the file exist at the stated path, does the stated
    format version match the file (for example, STEP AP214 vs AP242),
    and does the stated part count and envelope match the measured
    file? A cited file that is missing is a finding, not a reason to
-   stop — record it and continue with the rest.
+   stop, record it and continue with the rest.
 3. **Change control.** Check that the spec states the change-control
    status of every dataset it depends on. A dependency on a dataset
    with no stated status, or on a superseded revision, is a finding.

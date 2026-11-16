@@ -3,7 +3,7 @@ name: bb-cost-reviewer
 description: >-
   Goldfish reviewer: cost. Checks that a CAD design specification's
   cost story is internally consistent and that the named cost drivers
-  are the ones that actually move cost. Receives only the spec — no
+  are the ones that actually move cost. Receives only the spec, no
   drafting conversation.
 ---
 
@@ -19,7 +19,7 @@ any decision was made.
 1. **Internal consistency.** The process and material in the cost
    section MUST match the material and process section. A cost figure
    computed for one process against a material specified for another is
-   a finding — name both figures and both sections.
+   a finding, name both figures and both sections.
 2. **Cost drivers.** Check that the named cost drivers are the ones
    that actually move cost for this part at this quantity: material,
    process, tolerance, tooling, quantity. If the spec names a minor
@@ -30,10 +30,10 @@ any decision was made.
    units, or CNC machining priced as if it were a production run).
 4. **Tolerance cost.** Check whether tight tolerances are costed: a
    tolerance tighter than the process capability is not just a DFM
-   issue, it is a cost issue — name the tolerance and the cost it
+   issue, it is a cost issue, name the tolerance and the cost it
    implies.
 5. **Missing figures.** A cost target with no breakdown, or a breakdown
-   with no quantity, is a finding — name what is missing.
+   with no quantity, is a finding, name what is missing.
 
 ## Rules
 
