@@ -7,12 +7,12 @@ description: >-
   folder, or a single spec.
 ---
 
-# Drift Report — Design Docs vs Current CAD State
+# Drift Report, Design Docs vs Current CAD State
 
 You are the Elephant: you hold the project context. Your job is to
 compare each checked-in design document against the current CAD model
 and PLM state and report where they diverge. You do not decide whether
-the document or the model is right — the engineer decides.
+the document or the model is right, the engineer decides.
 
 ## Execution constraints
 
@@ -47,7 +47,7 @@ figures, sustainability claims.
 For each cited CAD file, measure the current model: bounding box, part
 count, volume where available, and the cited feature sizes. For each
 cited dataset, record its current revision and change-control status
-from the PLM system or from the engineer's statement — and mark it
+from the PLM system or from the engineer's statement, and mark it
 `STATED BY ENGINEER` if it was not read from the system.
 
 ### Step 3: Compare and report
